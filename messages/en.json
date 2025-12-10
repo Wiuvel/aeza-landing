@@ -1,0 +1,112 @@
+{
+  "header": {
+    "menu": "menu",
+    "services": "services",
+    "servers": "servers",
+    "cloudServers": "cloud servers (VDS)",
+    "cloudServersDesc": "modern processors and NVMe SSDs",
+    "dedicatedServers": "dedicated servers",
+    "dedicatedServersDesc": "maximum performance",
+    "highCpuServers": "high-cpu servers",
+    "highCpuServersDesc": "cloud servers (VDS)",
+    "highCpuServersDesc2": "incredibly fast and powerful",
+    "otherServices": "other services",
+    "domains": "domains",
+    "domainsDesc": "with free dns hosting",
+    "terminator": "terminator",
+    "terminatorDesc": "free cloud server",
+    "information": "information",
+    "contacts": "contacts",
+    "knowledgeBase": "knowledge base",
+    "kmi": "kmi",
+    "ddosProtection": "anti-DDoS",
+    "referralProgram": "referral program",
+    "dataCenters": "about data centers",
+    "bugBounty": "bug bounty",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "language": "language"
+  },
+  "hero": {
+    "title": "aéza – is a",
+    "titleItalic": "fast",
+    "titleEnd": "hosting",
+    "priceFrom": "or from €0.02/hour",
+    "priceMonth": "from",
+    "priceMonthValue": "€4.94/month",
+    "plansButton": "VPS/VDS plans"
+  },
+  "stats": {
+    "today": "today",
+    "attacks": "cyber attacks blocked today",
+    "status": "current status",
+    "working": "operational",
+    "servers": "operational servers"
+  },
+  "services": {
+    "cloudServers": "cloud servers (VPS/VDS)",
+    "cloudServersDesc": "virtual servers based on powerful processors and NVMe SSD drives.",
+    "dedicatedServers": "dedicated",
+    "dedicatedServersDesc": "rental of powerful servers in eight locations.",
+    "highCpu": "premium",
+    "highCpuServers": "hi-cpu servers",
+    "highCpuDesc": "virtual servers with extreme computing power",
+    "domains": "domains",
+    "domainsPlaceholder": "domain name",
+    "domainsCheck": "search",
+    "domainsDesc": "200+ zones, reasonable prices, free DNS hosting"
+  },
+  "features": {
+    "title": "why aéza?",
+    "description": "we are a modern hosting provider.",
+    "description2": "and here are a few of our advantages",
+    "chatSupport": {
+      "title": "chat support",
+      "description": "we will answer in the chat or by phone at any time. quickly and to the point"
+    },
+    "backups": {
+      "title": "convenient backups",
+      "description": "secure backup of your data to independent servers. your data is in safe hands"
+    },
+    "hourlyPayment": {
+      "title": "hourly payment",
+      "description": "you can borrow our server for an hour. for tests or to demonstrate your work. for everything"
+    },
+    "ddosProtection": {
+      "title": "anti-DDoS protection",
+      "description": "reliable and secure internet channel, with us your business is safe"
+    }
+  },
+  "referral": {
+    "title": "Choose hosting",
+    "ruHosting": "RU Hosting",
+    "ruHostingDesc": "SPB, Moscow - VPS only",
+    "euHosting": "EU Hosting",
+    "euHostingDesc": "international locations",
+    "close": "Close"
+  },
+  "footer": {
+    "legal": "Aeza International LTD\nCompany Number: 15109642\n347 Barking Road, London, England, E13 8EE",
+    "information": "information",
+    "services": "services",
+    "contacts": "contacts",
+    "socialNetworks": "social networks",
+    "telegram": "telegram",
+    "telegramBot": "telegram bot",
+    "vk": "vk",
+    "phone": "+44 772 937-60-58",
+    "email": "support@aeza.net",
+    "bot": "@aezasupport_bot",
+    "privacy": "privacy policy",
+    "terms": "terms of use",
+    "copyright": "© 2025 Aeza International Ltd",
+    "knowledgeBase": "knowledge base",
+    "virtualServers": "virtual servers"
+  },
+  "notFound": {
+    "title": "this page does not exist. If we broke something — write to",
+    "email": "support@aeza.net",
+    "button": "to main"
+  }
+}
+

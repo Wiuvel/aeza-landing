@@ -1,0 +1,112 @@
+{
+  "header": {
+    "menu": "меню",
+    "services": "услуги",
+    "servers": "серверы",
+    "cloudServers": "облачные серверы (VDS)",
+    "cloudServersDesc": "современные процессоры и NVMe SSD",
+    "dedicatedServers": "выделенные серверы",
+    "dedicatedServersDesc": "максимум производительности",
+    "highCpuServers": "high-cpu серверы",
+    "highCpuServersDesc": "облачные серверы (VDS)",
+    "highCpuServersDesc2": "невероятно быстрые и мощные",
+    "otherServices": "другие услуги",
+    "domains": "домены",
+    "domainsDesc": "с бесплатным хостингом dns",
+    "terminator": "терминатор",
+    "terminatorDesc": "бесплатный облачный сервер",
+    "information": "информация",
+    "contacts": "контакты",
+    "knowledgeBase": "база знаний",
+    "kmi": "kmi",
+    "ddosProtection": "защита от атак",
+    "referralProgram": "реферальная программа",
+    "dataCenters": "о дата-центрах",
+    "bugBounty": "bug bounty",
+    "login": "Вход",
+    "signup": "Регистрация",
+    "language": "язык"
+  },
+  "hero": {
+    "title": "аéза — это",
+    "titleItalic": "быстрый",
+    "titleEnd": "хостинг",
+    "priceFrom": "или от €0.02/час",
+    "priceMonth": "от",
+    "priceMonthValue": "€4.94/мес",
+    "plansButton": "тарифы VPS/VDS"
+  },
+  "stats": {
+    "today": "сегодня",
+    "attacks": "атак отражено сегодня",
+    "status": "текущий статус",
+    "working": "все работает",
+    "servers": "серверов запущено"
+  },
+  "services": {
+    "cloudServers": "облачные серверы (VPS/VDS)",
+    "cloudServersDesc": "виртуальные серверы на мощных процессорах и NVMe SSD накопителях.",
+    "dedicatedServers": "выделенные",
+    "dedicatedServersDesc": "аренда мощных серверов в восьми локациях.",
+    "highCpu": "премиум",
+    "highCpuServers": "hi-cpu сервера",
+    "highCpuDesc": "виртуальные сервера с предельными вычислительными мощностями",
+    "domains": "домены",
+    "domainsPlaceholder": "название домена",
+    "domainsCheck": "проверить",
+    "domainsDesc": "200+ зон, адекватные цены, бесплатный DNS-хостинг"
+  },
+  "features": {
+    "title": "почему аéза?",
+    "description": "мы – современный хостинг-провайдер.",
+    "description2": "а вот несколько наших преимуществ",
+    "chatSupport": {
+      "title": "поддержка в чате",
+      "description": "ответим в чате или по телефону в любое время. быстро и по делу"
+    },
+    "backups": {
+      "title": "удобные бэкапы",
+      "description": "безопасное резервное копирование ваших данных на независимые серверы. ваши данные в надежных руках"
+    },
+    "hourlyPayment": {
+      "title": "почасовая оплата",
+      "description": "вы можете взять у нас сервер на час. для тестов, для демонстрации проекта. для всего"
+    },
+    "ddosProtection": {
+      "title": "anti-DDoS защита",
+      "description": "надежный и защищенный интернет-канал, с нами ваш бизнес в безопасности"
+    }
+  },
+  "referral": {
+    "title": "Выберите хостинг",
+    "ruHosting": "RU Хостинг",
+    "ruHostingDesc": "СПБ, Москва - только VPS",
+    "euHosting": "EU Хостинг",
+    "euHostingDesc": "международные локации",
+    "close": "Закрыть"
+  },
+  "footer": {
+    "legal": "Aeza International LTD\nCompany Number: 15109642\n347 Barking Road, London, England, E13 8EE",
+    "information": "информация",
+    "services": "услуги",
+    "contacts": "контакты",
+    "socialNetworks": "соц. сети",
+    "telegram": "telegram",
+    "telegramBot": "бот telegram",
+    "vk": "vk",
+    "phone": "8 800 200-60-13",
+    "email": "support@aeza.net",
+    "bot": "@aezasupport_bot",
+    "privacy": "политика конфиденциальности",
+    "terms": "условия использования",
+    "copyright": "© 2025 Aeza International Ltd",
+    "knowledgeBase": "база знаний",
+    "virtualServers": "виртуальные серверы"
+  },
+  "notFound": {
+    "title": "этой страницы не существует. Если мы что-то сломали — напишите на почту",
+    "email": "support@aeza.net",
+    "button": "на главную"
+  }
+}
+
