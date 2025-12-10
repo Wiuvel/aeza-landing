@@ -20,7 +20,7 @@ export default function Stats() {
       const minutes = String(mskTime.getMinutes()).padStart(2, '0');
       const seconds = String(mskTime.getSeconds()).padStart(2, '0');
       
-      setCurrentTime(`${day} ${month}, ${hours}:${minutes}:${seconds} MSK`);
+      setCurrentTime(`${day} ${month}, ${hours}:${minutes}:${seconds} GMT+3`);
     };
 
     updateTime();

@@ -58,7 +58,7 @@ export default function Header() {
             <div className="md:hidden flex items-center gap-4">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="p-2 flex items-center gap-1"
+                className="p-2 flex items-center gap-1 bg-gray-200 rounded-full"
                 aria-label="Login"
               >
                 <DoorIcon className="w-5 h-5" size={20} />

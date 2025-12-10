@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aeza.online/sitemap.xml
+
+# Disallow admin and private areas (if any)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Crawl-delay (optional, remove if not needed)
+# Crawl-delay: 1
+
