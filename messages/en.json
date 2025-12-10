@@ -79,9 +79,9 @@
   },
   "referral": {
     "title": "Choose hosting",
-    "ruHosting": "RU Hosting",
-    "ruHostingDesc": "SPB, Moscow - VPS only",
-    "euHosting": "EU Hosting",
+    "ruHosting": "RU Aeza",
+    "ruHostingDesc": "Saint Petersburg, Moscow",
+    "euHosting": "EU Aeza",
     "euHostingDesc": "international locations",
     "close": "Close"
   },

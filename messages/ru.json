@@ -79,9 +79,9 @@
   },
   "referral": {
     "title": "Выберите хостинг",
-    "ruHosting": "RU Хостинг",
-    "ruHostingDesc": "СПБ, Москва - только VPS",
-    "euHosting": "EU Хостинг",
+    "ruHosting": "RU Aeza",
+    "ruHostingDesc": "СПБ, Москва",
+    "euHosting": "EU Aeza",
     "euHostingDesc": "международные локации",
     "close": "Закрыть"
   },

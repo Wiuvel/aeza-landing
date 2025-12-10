@@ -10,3 +10,5 @@ export function getReferralUrl(locale: Locale): string {
 export function getDomainsUrl(locale: Locale): string {
   return `https://aeza.net/${locale}/domains`;
 }
+
+
