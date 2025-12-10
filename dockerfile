@@ -6,7 +6,11 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm ci
+RUN echo "Checking files..." && \
+    ls -la package*.json && \
+    echo "Running npm ci..." && \
+    npm ci --no-audit --prefer-offline || \
+    (echo "⚠️ npm ci failed, trying npm install..." && npm install --no-audit --legacy-peer-deps)
 
 FROM base AS builder
 WORKDIR /app
