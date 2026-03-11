@@ -74,63 +74,22 @@ export default function Logo() {
     <Link href={`/${locale}`} className="inline-block">
       <div
         ref={containerRef}
-        className="relative flex items-center cursor-pointer"
+        className="relative flex cursor-pointer items-center"
         style={{ width: '144px', height: '36px' }}
       >
-        <div
-          ref={aRef}
-          className="absolute opacity-0"
-          style={{ left: 0, zIndex: 1 }}
-        >
-          <Image
-            src="/svg/a.svg"
-            alt="a"
-            width={36}
-            height={36}
-            className="block"
-          />
+        <div ref={aRef} className="absolute opacity-0" style={{ left: 0, zIndex: 1 }}>
+          <Image src="/svg/a.svg" alt="a" width={36} height={36} className="block" />
         </div>
-        <div
-          ref={eRef}
-          className="absolute opacity-100"
-          style={{ left: '38px', zIndex: 3 }}
-        >
-          <Image
-            src="/svg/e.svg"
-            alt="e"
-            width={36}
-            height={36}
-            className="block"
-          />
+        <div ref={eRef} className="absolute opacity-100" style={{ left: '38px', zIndex: 3 }}>
+          <Image src="/svg/e.svg" alt="e" width={36} height={36} className="block" />
         </div>
-        <div
-          ref={zRef}
-          className="absolute opacity-0"
-          style={{ left: '76px', zIndex: 2 }}
-        >
-          <Image
-            src="/svg/z.svg"
-            alt="z"
-            width={36}
-            height={36}
-            className="block"
-          />
+        <div ref={zRef} className="absolute opacity-0" style={{ left: '76px', zIndex: 2 }}>
+          <Image src="/svg/z.svg" alt="z" width={36} height={36} className="block" />
         </div>
-        <div
-          ref={lastARef}
-          className="absolute opacity-0"
-          style={{ left: '108px', zIndex: 1 }}
-        >
-          <Image
-            src="/svg/last_a.svg"
-            alt="a"
-            width={36}
-            height={36}
-            className="block"
-          />
+        <div ref={lastARef} className="absolute opacity-0" style={{ left: '108px', zIndex: 1 }}>
+          <Image src="/svg/last_a.svg" alt="a" width={36} height={36} className="block" />
         </div>
       </div>
     </Link>
   );
 }
-

@@ -10,32 +10,30 @@ export default function NotFound() {
   const locale = (params?.locale as string) || 'ru';
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white px-4">
-      <div className="max-w-6xl w-full flex flex-col lg:flex-row items-center justify-between gap-12">
+    <div className="flex min-h-screen items-center justify-center bg-white px-4">
+      <div className="flex w-full max-w-6xl flex-col items-center justify-between gap-12 lg:flex-row">
         {/* Left side - Text and Button */}
-        <div className="flex-1 max-w-md">
-          <p className="text-lg mb-8">
+        <div className="max-w-md flex-1">
+          <p className="mb-8 text-lg">
             {t('title')}{' '}
             <a
               href={`mailto:${t('email')}`}
-              className="text-blue-400 hover:text-blue-500 transition-colors"
+              className="text-blue-400 transition-colors hover:text-blue-500"
             >
               {t('email')}
             </a>
           </p>
           <Link
             href={`/${locale}`}
-            className="inline-block px-6 py-3 bg-black text-white hover:bg-gray-800 transition-colors rounded"
+            className="inline-block rounded bg-black px-6 py-3 text-white transition-colors hover:bg-gray-800"
           >
             {t('button')}
           </Link>
         </div>
 
         {/* Right side - Large 404 */}
-        <div className="flex-1 flex justify-center lg:justify-end">
-          <h1 className="text-[200px] lg:text-[300px] font-bold leading-none">
-            404
-          </h1>
+        <div className="flex flex-1 justify-center lg:justify-end">
+          <h1 className="text-[200px] font-bold leading-none lg:text-[300px]">404</h1>
         </div>
       </div>
     </div>

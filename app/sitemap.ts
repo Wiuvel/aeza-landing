@@ -15,13 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 1,
       alternates: {
-        languages: Object.fromEntries(
-          locales.map((l) => [l, `${baseUrl}/${l}`])
-        ),
+        languages: Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}`])),
       },
     });
   });
 
   return routes;
 }
-

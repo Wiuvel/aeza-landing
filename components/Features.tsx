@@ -29,38 +29,38 @@ export default function Features() {
   ];
 
   return (
-    <section className="w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 font-system">
+    <section className="w-full bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="font-system mb-4 text-center text-3xl font-bold sm:text-4xl">
           {t('title')}
         </h2>
-        <p className="text-center text-gray-600 mb-12">
+        <p className="mb-12 text-center text-gray-600">
           {t('description')}
           <br />
           {t('description2')}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg ${
+              className={`rounded-lg p-6 ${
                 index === 2
                   ? 'bg-black text-white'
                   : index === 3
-                  ? 'bg-gray-800 text-white'
-                  : 'bg-white'
+                    ? 'bg-gray-800 text-white'
+                    : 'bg-white'
               }`}
             >
-              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+              <h3 className="mb-2 text-xl font-bold">{feature.title}</h3>
               <p className="text-sm">{feature.description}</p>
               {feature.image && (
-                <div className="mt-4 w-full flex items-center justify-center">
+                <div className="mt-4 flex w-full items-center justify-center">
                   <Image
                     src="/svg/help.webp"
                     alt="help"
                     width={200}
                     height={200}
-                    className="w-48 h-48 object-contain no-drag"
+                    className="no-drag h-48 w-48 object-contain"
                     draggable={false}
                   />
                 </div>
@@ -72,4 +72,3 @@ export default function Features() {
     </section>
   );
 }
-

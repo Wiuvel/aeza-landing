@@ -18,12 +18,12 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+      <header className="sticky top-0 z-40 w-full border-b border-gray-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-20 items-center justify-between">
             <div className="flex items-center gap-4">
               <button
-                className="md:hidden p-2"
+                className="p-2 md:hidden"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Menu"
               >
@@ -35,50 +35,50 @@ export default function Header() {
               <Logo />
             </div>
 
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden items-center gap-6 md:flex">
               <LanguageSwitcher currentLocale={currentLocale} />
               <div className="flex items-center gap-2">
-                <DoorIcon className="w-5 h-5" size={20} />
+                <DoorIcon className="h-5 w-5" size={20} />
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="text-base hover:underline font-medium"
+                  className="text-base font-medium hover:underline"
                 >
                   {t('login')}
                 </button>
                 <span className="text-base">/</span>
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="text-base hover:underline font-medium"
+                  className="text-base font-medium hover:underline"
                 >
                   {t('signup')}
                 </button>
               </div>
             </div>
 
-            <div className="md:hidden flex items-center gap-4">
+            <div className="flex items-center gap-4 md:hidden">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="p-2 flex items-center gap-1 bg-gray-200 rounded-full"
+                className="flex items-center gap-1 rounded-full bg-gray-200 p-2"
                 aria-label="Login"
               >
-                <DoorIcon className="w-5 h-5" size={20} />
+                <DoorIcon className="h-5 w-5" size={20} />
               </button>
             </div>
           </div>
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 bg-white">
-            <div className="px-4 py-4 space-y-4">
+          <div className="border-t border-gray-200 bg-white md:hidden">
+            <div className="space-y-4 px-4 py-4">
               <LanguageSwitcher currentLocale={currentLocale} />
               <button
                 onClick={() => {
                   setIsModalOpen(true);
                   setIsMenuOpen(false);
                 }}
-                className="flex items-center gap-2 w-full text-left py-2 hover:bg-gray-50"
+                className="flex w-full items-center gap-2 py-2 text-left hover:bg-gray-50"
               >
-                <DoorIcon className="w-4 h-4" size={16} />
+                <DoorIcon className="h-4 w-4" size={16} />
                 {t('login')} / {t('signup')}
               </button>
             </div>

@@ -18,4 +18,3 @@ export default function DoorIcon({ className = 'w-5 h-5', size = 20 }: DoorIconP
     />
   );
 }
-

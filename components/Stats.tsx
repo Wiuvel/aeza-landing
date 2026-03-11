@@ -12,14 +12,27 @@ export default function Stats() {
     const updateTime = () => {
       const now = new Date();
       const mskTime = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
-      
-      const months = ['янв.', 'фев.', 'мар.', 'апр.', 'май', 'июн.', 'июл.', 'авг.', 'сен.', 'окт.', 'ноя.', 'дек.'];
+
+      const months = [
+        'янв.',
+        'фев.',
+        'мар.',
+        'апр.',
+        'май',
+        'июн.',
+        'июл.',
+        'авг.',
+        'сен.',
+        'окт.',
+        'ноя.',
+        'дек.',
+      ];
       const day = mskTime.getDate();
       const month = months[mskTime.getMonth()];
       const hours = String(mskTime.getHours()).padStart(2, '0');
       const minutes = String(mskTime.getMinutes()).padStart(2, '0');
       const seconds = String(mskTime.getSeconds()).padStart(2, '0');
-      
+
       setCurrentTime(`${day} ${month}, ${hours}:${minutes}:${seconds} GMT+3`);
     };
 
@@ -30,17 +43,17 @@ export default function Stats() {
   }, []);
 
   return (
-    <section className="w-full bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="w-full bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center">
+            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center">
               <Image
                 src="/svg/today.670ca392.svg"
                 alt="today"
                 width={40}
                 height={40}
-                className="w-full h-full object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
             <div>
@@ -49,13 +62,13 @@ export default function Stats() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center">
+            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center">
               <Image
                 src="/svg/attacks.365cb085.svg"
                 alt="attacks"
                 width={40}
                 height={40}
-                className="w-full h-full object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
             <div>
@@ -64,13 +77,13 @@ export default function Stats() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center">
+            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center">
               <Image
                 src="/svg/status.8191c510.svg"
                 alt="status"
                 width={40}
                 height={40}
-                className="w-full h-full object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
             <div>
@@ -79,13 +92,13 @@ export default function Stats() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center">
+            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center">
               <Image
                 src="/svg/servers.380daf98.svg"
                 alt="servers"
                 width={40}
                 height={40}
-                className="w-full h-full object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
             <div>
@@ -98,4 +111,3 @@ export default function Stats() {
     </section>
   );
 }
-

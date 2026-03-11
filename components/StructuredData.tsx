@@ -9,7 +9,7 @@ interface StructuredDataProps {
 export default function StructuredData({ locale }: StructuredDataProps) {
   useEffect(() => {
     const baseUrl = 'https://aeza.online';
-    
+
     const organizationSchema = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
@@ -24,10 +24,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         email: 'support@aeza.net',
         availableLanguage: ['Russian', 'English'],
       },
-      sameAs: [
-        'https://aeza.net',
-        'https://aeza.ru',
-      ],
+      sameAs: ['https://aeza.net', 'https://aeza.ru'],
     };
 
     const websiteSchema = {
@@ -35,9 +32,10 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       '@type': 'WebSite',
       name: 'Aéza',
       url: baseUrl,
-      description: locale === 'ru'
-        ? 'Современный облачный хостинг провайдер. VPS/VDS, выделенные серверы, домены.'
-        : 'Modern cloud hosting provider. VPS/VDS, dedicated servers, domains.',
+      description:
+        locale === 'ru'
+          ? 'Современный облачный хостинг провайдер. VPS/VDS, выделенные серверы, домены.'
+          : 'Modern cloud hosting provider. VPS/VDS, dedicated servers, domains.',
       inLanguage: [locale === 'ru' ? 'ru-RU' : 'en-US', locale === 'ru' ? 'en-US' : 'ru-RU'],
       potentialAction: {
         '@type': 'SearchAction',
@@ -81,9 +79,10 @@ export default function StructuredData({ locale }: StructuredDataProps) {
           contactType: 'customer service',
         },
       },
-      description: locale === 'ru'
-        ? 'VPS/VDS серверы, выделенные серверы, домены, почасовая оплата'
-        : 'VPS/VDS servers, dedicated servers, domains, hourly payment',
+      description:
+        locale === 'ru'
+          ? 'VPS/VDS серверы, выделенные серверы, домены, почасовая оплата'
+          : 'VPS/VDS servers, dedicated servers, domains, hourly payment',
     };
 
     const schemas = [organizationSchema, websiteSchema, breadcrumbSchema, serviceSchema];
@@ -93,13 +92,13 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       script.type = 'application/ld+json';
       script.text = JSON.stringify(schema);
       script.id = `structured-data-${schema['@type']}`;
-      
+
       // Remove existing script if present
       const existing = document.getElementById(script.id);
       if (existing) {
         existing.remove();
       }
-      
+
       document.head.appendChild(script);
     });
 
@@ -115,4 +114,3 @@ export default function StructuredData({ locale }: StructuredDataProps) {
 
   return null;
 }
-

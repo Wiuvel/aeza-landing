@@ -12,10 +12,17 @@ module.exports = {
         secondary: '#DDFBFF',
       },
       fontFamily: {
-        sans: ['Aeza', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        sans: [
+          'Aeza',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'sans-serif',
+        ],
       },
     },
   },
   plugins: [],
-}
-
+};

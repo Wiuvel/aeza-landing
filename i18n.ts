@@ -12,7 +12,7 @@ export function getLocale(request: Request): Locale {
       return localeMatch[1] as Locale;
     }
   }
-  
+
   // Try to get from Accept-Language header
   const acceptLanguage = request.headers.get('accept-language');
   if (acceptLanguage) {
@@ -20,10 +20,6 @@ export function getLocale(request: Request): Locale {
     if (preferredLang === 'en') return 'en';
     if (preferredLang === 'ru') return 'ru';
   }
-  
+
   return defaultLocale;
 }
-
-
-
-

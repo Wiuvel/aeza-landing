@@ -11,9 +11,9 @@ export default function Footer() {
   const locale = params?.locale || 'ru';
 
   return (
-    <footer className="w-full bg-white border-t border-gray-200 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+    <footer className="w-full border-t border-gray-200 bg-white px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-4">
           <div>
             <Link href={`/${locale}`} className="block">
               <Image
@@ -21,24 +21,22 @@ export default function Footer() {
                 alt="Aeza Logo"
                 width={354}
                 height={85}
-                className="h-10 w-auto no-drag"
+                className="no-drag h-10 w-auto"
                 draggable={false}
               />
             </Link>
-            <p className="text-sm text-gray-600 whitespace-pre-line mt-4">
-              {t('legal')}
-            </p>
+            <p className="mt-4 whitespace-pre-line text-sm text-gray-600">{t('legal')}</p>
             <a
               href="https://uk.trustpilot.com/review/aeza.net"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-gray-600 hover:underline mt-2 inline-block"
+              className="mt-2 inline-block text-sm text-gray-600 hover:underline"
             >
               Trustpilot
             </a>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">{t('information')}</h4>
+            <h4 className="mb-4 font-semibold">{t('information')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
@@ -53,7 +51,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">{t('services')}</h4>
+            <h4 className="mb-4 font-semibold">{t('services')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
@@ -68,7 +66,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">{t('contacts')}</h4>
+            <h4 className="mb-4 font-semibold">{t('contacts')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="tel:+78002006013" className="hover:underline">
@@ -93,7 +91,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-8 sm:flex-row">
           <div className="flex flex-wrap gap-4 text-sm">
             <a
               href={`https://aeza.net/legal/${locale}/privacy.pdf`}
@@ -118,4 +116,3 @@ export default function Footer() {
     </footer>
   );
 }
-

@@ -9,7 +9,7 @@ export default function Services() {
   const t = useTranslations('services');
   const params = useParams();
   const locale = (params?.locale as Locale) || 'ru';
-  
+
   const handleReferralClick = (e: React.MouseEvent) => {
     e.preventDefault();
     const url = getReferralUrl(locale);
@@ -18,7 +18,7 @@ export default function Services() {
       newWindow.opener = null;
     }
   };
-  
+
   const handleDomainsCheck = (e: React.FormEvent) => {
     e.preventDefault();
     const url = getDomainsUrl(locale);
@@ -29,16 +29,16 @@ export default function Services() {
   };
 
   return (
-    <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="w-full bg-white px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <a
             href={getReferralUrl(locale)}
             onClick={handleReferralClick}
-            className="p-6 border border-gray-200 rounded-lg hover:border-black transition-colors cursor-pointer block"
+            className="block cursor-pointer rounded-lg border border-gray-200 p-6 transition-colors hover:border-black"
           >
-            <h3 className="text-xl font-bold mb-2">{t('cloudServers')}</h3>
-            <p className="text-sm text-gray-600 mb-4">{t('cloudServersDesc')}</p>
+            <h3 className="mb-2 text-xl font-bold">{t('cloudServers')}</h3>
+            <p className="mb-4 text-sm text-gray-600">{t('cloudServersDesc')}</p>
             <div className="flex justify-end">
               <svg width="27" height="18" viewBox="0 0 27 18" fill="none">
                 <path
@@ -54,14 +54,14 @@ export default function Services() {
           <a
             href={getReferralUrl(locale)}
             onClick={handleReferralClick}
-            className="p-6 border border-gray-200 rounded-lg hover:border-black transition-colors cursor-pointer block"
+            className="block cursor-pointer rounded-lg border border-gray-200 p-6 transition-colors hover:border-black"
           >
-            <h3 className="text-xl font-bold mb-2">
+            <h3 className="mb-2 text-xl font-bold">
               <i className="italic">{t('dedicatedServers')}</i>
               <br />
               серверы
             </h3>
-            <p className="text-sm text-gray-600 mb-4">{t('dedicatedServersDesc')}</p>
+            <p className="mb-4 text-sm text-gray-600">{t('dedicatedServersDesc')}</p>
             <div className="flex justify-end">
               <svg width="27" height="18" viewBox="0 0 27 18" fill="none">
                 <path
@@ -77,14 +77,14 @@ export default function Services() {
           <a
             href={getReferralUrl(locale)}
             onClick={handleReferralClick}
-            className="p-6 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors cursor-pointer block"
+            className="block cursor-pointer rounded-lg bg-black p-6 text-white transition-colors hover:bg-gray-800"
           >
-            <h3 className="text-xl font-bold mb-2">
+            <h3 className="mb-2 text-xl font-bold">
               {t('highCpu')}
               <br />
               {t('highCpuServers')}
             </h3>
-            <p className="text-sm text-gray-300 mb-4">{t('highCpuDesc')}</p>
+            <p className="mb-4 text-sm text-gray-300">{t('highCpuDesc')}</p>
             <div className="flex justify-end">
               <svg width="27" height="18" viewBox="0 0 27 18" fill="none">
                 <path
@@ -97,23 +97,23 @@ export default function Services() {
             </div>
           </a>
 
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="text-xl font-bold mb-2">{t('domains')}</h3>
+          <div className="rounded-lg border border-gray-200 p-6">
+            <h3 className="mb-2 text-xl font-bold">{t('domains')}</h3>
             <form onSubmit={handleDomainsCheck} className="mb-4">
               <input
                 type="text"
                 placeholder={t('domainsPlaceholder')}
-                className="w-full px-4 py-2 border border-gray-300 rounded mb-2"
+                className="mb-2 w-full rounded border border-gray-300 px-4 py-2"
               />
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-black text-white hover:bg-gray-800 transition-colors rounded"
+                className="w-full rounded bg-black px-4 py-2 text-white transition-colors hover:bg-gray-800"
               >
                 {t('domainsCheck')}
               </button>
             </form>
             <p className="text-sm text-gray-600">{t('domainsDesc')}</p>
-            <div className="flex justify-end mt-4">
+            <div className="mt-4 flex justify-end">
               <svg width="27" height="18" viewBox="0 0 27 18" fill="none">
                 <path
                   d="M1 9H26M26 9L17.6667 1M26 9L17.6667 17"
@@ -129,4 +129,3 @@ export default function Services() {
     </section>
   );
 }
-

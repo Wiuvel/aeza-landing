@@ -10,13 +10,9 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function HomePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default function HomePage({ params: _params }: { params: Promise<{ locale: string }> }) {
   return (
-    <div className="h-screen w-screen flex flex-col overflow-hidden">
+    <div className="flex h-screen w-screen flex-col overflow-hidden">
       <Header />
       <main className="flex-1 overflow-y-auto">
         <Hero />

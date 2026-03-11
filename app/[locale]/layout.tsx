@@ -13,17 +13,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const baseUrl = 'https://aeza.online';
   const currentUrl = `${baseUrl}/${locale}`;
-  
-  const title = locale === 'ru' 
-    ? 'Современный облачный хостинг провайдер | Aéza'
-    : 'Modern cloud hosting provider | Aéza';
-  const description = locale === 'ru'
-    ? 'Передовые виртуальные и выделенные серверы для проектов любой сложности и структуры. VPS/VDS, выделенные серверы, домены, почасовая оплата.'
-    : 'Advanced virtual and dedicated servers for projects of any complexity and structure. VPS/VDS, dedicated servers, domains, hourly payment.';
-  const keywords = locale === 'ru'
-    ? 'хостинг, VDS, VPS, выделенные серверы, облачный хостинг, aeza, виртуальный сервер, vds хостинг, vps хостинг, облачный сервер'
-    : 'hosting, VDS, VPS, dedicated servers, cloud hosting, aeza, virtual server, vds hosting, vps hosting, cloud server';
-  
+
+  const title =
+    locale === 'ru'
+      ? 'Современный облачный хостинг провайдер | Aéza'
+      : 'Modern cloud hosting provider | Aéza';
+  const description =
+    locale === 'ru'
+      ? 'Передовые виртуальные и выделенные серверы для проектов любой сложности и структуры. VPS/VDS, выделенные серверы, домены, почасовая оплата.'
+      : 'Advanced virtual and dedicated servers for projects of any complexity and structure. VPS/VDS, dedicated servers, domains, hourly payment.';
+  const keywords =
+    locale === 'ru'
+      ? 'хостинг, VDS, VPS, выделенные серверы, облачный хостинг, aeza, виртуальный сервер, vds хостинг, vps хостинг, облачный сервер'
+      : 'hosting, VDS, VPS, dedicated servers, cloud hosting, aeza, virtual server, vds hosting, vps hosting, cloud server';
+
   return {
     title,
     description,
@@ -32,8 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternates: {
       canonical: currentUrl,
       languages: {
-        'ru': `${baseUrl}/ru`,
-        'en': `${baseUrl}/en`,
+        ru: `${baseUrl}/ru`,
+        en: `${baseUrl}/en`,
         'x-default': `${baseUrl}/ru`,
       },
     },
@@ -99,9 +102,7 @@ export default async function LocaleLayout({
       <body className="h-full w-full overflow-hidden">
         <StructuredData locale={locale} />
         <NextIntlClientProvider messages={messages}>
-          <div className="h-full w-full overflow-hidden">
-            {children}
-          </div>
+          <div className="h-full w-full overflow-hidden">{children}</div>
         </NextIntlClientProvider>
       </body>
     </html>
